@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GbombSDKSample</string>
+    <string name="facebook_app_id">129645243823370</string>
+    <string name="gbomb_app_id">testclientid</string>
+</resources>

@@ -1,0 +1,16 @@
+GbombLoginSDKWrapper/gen
+GbombLoginSDKWrapper/bin
+FacebookSDKWrapper/gen
+FacebookSDKWrapper/bin
+GbombSDKWrapper/gen
+GbombSDKWrapper/bin
+InAppPurchaseWrapper/gen
+InAppPurchaseWrapper/bin
+GbombSDKSample/GbombSDKSample.apk
+GbombSDKSample/proj.android/gen
+GbombSDKSample/proj.android/bin
+GbombSDKSample/proj.linux
+GbombSDKSample/proj.win32
+GbombSDKSample/proj.wp8-xaml
+GbombSDKSample/proj.android/obj
+GbombSDKSample/proj.ios_mac
