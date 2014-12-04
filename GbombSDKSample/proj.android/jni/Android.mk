@@ -3,7 +3,7 @@ LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
 LOCAL_MODULE := gbombsdk_share
 LOCAL_MODULE_FILENAME := libgbombsdk
-LOCAL_SRC_FILES := ../../libgbombsdk.so
+LOCAL_SRC_FILES := ../../../libgbombsdk.so
 LOCAL_EXPORT_C_INCLUDES := $(LOCAL_PATH)/../../../header/
 include $(PREBUILT_SHARED_LIBRARY)
 
