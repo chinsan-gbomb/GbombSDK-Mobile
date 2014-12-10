@@ -49,7 +49,8 @@
  	        android:name="com.gbombgames.LoginActivity"/>
         <meta-data android:name="com.gbombgames.sdk.ApplicationId" android:value="@string/gbomb_app_id"/>
         <meta-data android:name="com.gbombgames.sdk.googleplaykey" 
-            android:value="MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtYhJFm05xgyaw3mSESZiB1dpp5W1nO9iNQanMAMja1o7YrgkNRbVRXYAVzPe0DhdIk7u5iTtZMw91Ygo3vP737Hw1I9S8Sr5PZmx139koYE+KhpbMZkJTTQovfHCUoWSyDoJZNU1PdRfLTyhNTd276gY9mPBacPXHAmxxG+ZNyjYHUWWsIclQxQv9dmx41xnQHBGeU/YyQMDbTNWeRlnwRDjnXy4pqDN5OsSP0QXQW1X38hgf2RZpxjhy8Uaa6pt971TZE/bXhIlp/R8SZpFwEJbcM7LkYYdz5btZxD2l+rL5gB3VBMI0M48oUqWsfJtksYiO4xmDYGiChbmj5b/dwIDAQAB" />        
+            android:value="MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtYhJFm05xgyaw3mSESZiB1dpp5W1nO9iNQanMAMja1o7YrgkNRbVRXYAVzPe0DhdIk7u5iTtZMw91Ygo3vP737Hw1I9S8Sr5PZmx139koYE+KhpbMZkJTTQovfHCUoWSyDoJZNU1PdRfLTyhNTd276gY9mPBacPXHAmxxG+ZNyjYHUWWsIclQxQv9dmx41xnQHBGeU/YyQMDbTNWeRlnwRDjnXy4pqDN5OsSP0QXQW1X38hgf2RZpxjhy8Uaa6pt971TZE/bXhIlp/R8SZpFwEJbcM7LkYYdz5btZxD2l+rL5gB3VBMI0M48oUqWsfJtksYiO4xmDYGiChbmj5b/dwIDAQAB" />
+        <meta-data android:name="com.gbombgames.3rd" android:value="false"/>        
 
         <activity
             android:name="org.cocos2dx.cpp.AppActivity"
