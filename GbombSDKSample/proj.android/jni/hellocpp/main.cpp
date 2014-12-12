@@ -3,8 +3,6 @@
 #include "platform/android/jni/JniHelper.h"
 #include <jni.h>
 #include <android/log.h>
-#include "GbombClient.h"
-#include "IGbombClient.h"
 
 
 #define  LOG_TAG    "main"
@@ -15,7 +13,4 @@ using namespace cocos2d;
 void cocos_android_app_init (JNIEnv* env, jobject thiz) {
     LOGD("cocos_android_app_init");
     AppDelegate *pAppDelegate = new AppDelegate();
-
-	IGbombClient *client = GbombClient::getInstance();
-	client->init("dxccs");
 }

@@ -1,5 +1,6 @@
 #include "AppDelegate.h"
 #include "HelloWorldScene.h"
+#include "GbombClient.h"
 
 USING_NS_CC;
 
@@ -42,6 +43,9 @@ bool AppDelegate::applicationDidFinishLaunching() {
 
     // run
     director->runWithScene(scene);
+
+	IGbombClient *client = GbombClient::getInstance();
+	client->init("dxccs");
 
     return true;
 }
