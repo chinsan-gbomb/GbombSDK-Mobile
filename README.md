@@ -34,4 +34,14 @@ and add the following lines into your AppDelegate
 	client->init("YOUR_GAME_ID");
 ```
 
+###Callback
+1. code: 100 is okay, others is failed
+2. data: The format is using [JSend](http://labs.omniti.com/labs/jsend)
+3. sample:
+``` json
+{
+  "status": "success", 
+  "data": { }
+}
+```
 More documentation is still to come. For now, please see header/IGbombClient.h and GbombSDKSample.
