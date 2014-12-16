@@ -100,6 +100,16 @@ bool HelloWorld::init() {
 	menu3->setPosition(Point(item3->getContentSize().width / 2, 300));
 	addChild(menu3);
 
+	auto item4 = MenuItemFont::create("callService", [&](Ref* sender) {
+		IGbombClient *client = GbombClient::getInstance();
+		client->callService("server_id=1&cid=1234", nullptr);
+	});
+	item4->setFontSize(40);
+	item4->setFontName("Marker Felt");
+	auto menu4 = Menu::create(item4, NULL);
+	menu4->setPosition(Point(item4->getContentSize().width / 2, 600));
+	addChild(menu4);
+
 	/////////////////////////////
 	// 3. add your codes below...
 
