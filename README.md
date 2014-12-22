@@ -28,6 +28,10 @@ and add the following lines into your main AppActivity.java
 		GbombClient.onActivityResult(requestCode, resultCode, data);
 		super.onActivityResult(requestCode, resultCode, data);
 	}
+	protected void onResume() {
+		GbombClient.onResume();
+		super.onResume();
+	}
 ```
 and add the following lines into your AppDelegate
 ``` cpp
