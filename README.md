@@ -15,7 +15,7 @@ add the following lines into AndroidManifest.xml
     android:name="com.gbombgames.LoginActivity"/>
   <meta-data android:name="com.gbombgames.sdk.ApplicationId" android:value="@string/gbomb_app_id"/>
   <meta-data android:name="com.gbombgames.sdk.googleplaykey" android:value="YOUR_IAP_KEY" />
-  <meta-data android:name="com.gbombgames.3rd" android:value="false"/>
+  <meta-data android:name="com.gbombgames.sdk.3rd" android:value="false"/>
   <meta-data android:name="com.gbombgames.sdk.gameId" android:value="YOUR_GAME_ID"/>
 ```
 and add the following lines into your main AppActivity.java
