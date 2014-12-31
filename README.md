@@ -38,8 +38,22 @@ and add the following lines into your AppDelegate
   IGbombClient *client = GbombClient::getInstance();
 	client->init("YOUR_GAME_ID");
 ```
-
-###Callback
+##iOS
+Using the library is really simple, just drag the frameworks into your project.
+###Setup
+add the following lines into Info.plist
+``` plist
+	<key>FacebookAppID</key>
+	<string>855391541148444</string>
+	<key>FacebookRedirectUri</key>
+	<string>http://sdk.gbombgames.com/oauth_callback.php?provider_id=Facebook</string>
+```
+and add the following lines into your AppDelegate
+``` cpp
+  IGbombClient *client = GbombClient::getInstance();
+	client->init("YOUR_GAME_ID");
+```
+##Callback
 1. code: 100 is okay, others is failed
 2. data: The format is using [JSend](http://labs.omniti.com/labs/jsend)
 3. sample:
@@ -49,4 +63,5 @@ and add the following lines into your AppDelegate
   "data": { }
 }
 ```
+
 More documentation is still to come. For now, please see header/IGbombClient.h and GbombSDKSample.
