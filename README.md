@@ -18,7 +18,7 @@ add the following lines into AndroidManifest.xml
   <meta-data android:name="com.gbombgames.sdk.3rd" android:value="false"/>
   <meta-data android:name="com.gbombgames.sdk.gameId" android:value="YOUR_GAME_ID"/>
 ```
-and add the following lines into your main AppActivity.java
+, add the following lines into your main AppActivity.java
 ```java
 	protected void onCreate(final Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -32,6 +32,10 @@ and add the following lines into your main AppActivity.java
 		GbombClient.onResume();
 		super.onResume();
 	}
+```
+, load our library before others
+``` java
+	System.loadLibrary("gbombsdk");
 ```
 and add the following lines into your AppDelegate
 ``` cpp
