@@ -1,4 +1,6 @@
 #GbombSDK-Mobile
+##Interface
+Please read header file, [IGbombClient.h](https://github.com/Asgard-Entertainment/GbombSDK-Mobile/blob/master/Android/GbombSDKWrapper/jni/include/IGbombClient.h)
 ##Android
 Using the library is really simple, just look at the source code of the GbombSDKSample.
 ###Setup
@@ -68,4 +70,4 @@ and add the following lines into your AppDelegate
 }
 ```
 
-More documentation is still to come. For now, please see header/IGbombClient.h and GbombSDKSample.
+More documentation is still to come. For now, please read [IGbombClient.h](https://github.com/Asgard-Entertainment/GbombSDK-Mobile/blob/master/Android/GbombSDKWrapper/jni/include/IGbombClient.h) and [GbombSDKSample](https://github.com/Asgard-Entertainment/GbombSDK-Mobile/tree/master/GbombSDKSample).
