@@ -62,6 +62,7 @@ Please read header file, [IGbombClient.h](https://github.com/Asgard-Entertainmen
     */
     void unsubPush(const string regid, const APICallback callback);
 ```
+The result json string in APICallback is all in the same format, please read the [block of callback](https://github.com/Asgard-Entertainment/GbombSDK-Mobile/blob/master/README.md#callback)
 ##Android
 Using the library is really simple, just look at the source code of the GbombSDKSample.
 ###Setup
