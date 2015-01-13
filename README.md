@@ -1,6 +1,13 @@
 #GbombSDK-Mobile
 ##Interface
-Please read header file, [IGbombClient.h](https://github.com/Asgard-Entertainment/GbombSDK-Mobile/blob/master/Android/GbombSDKWrapper/jni/include/IGbombClient.h)
+Our interface is in C++.
+Please read header file, [IGbombClient.h](https://github.com/Asgard-Entertainment/GbombSDK-Mobile/blob/master/Android/GbombSDKWrapper/jni/include/IGbombClient.h).
+
+Our Client is design in Singleton pattern. So you can easily get a instance using a code below.
+``` C++
+IGbombClient *client = GbombClient::getInstance();
+```
+And there are its method below.
 ``` C++
     /**
     	Initialize SDK, should call this before any function.
@@ -31,10 +38,12 @@ Please read header file, [IGbombClient.h](https://github.com/Asgard-Entertainmen
     /**
     	Start a flow of purchasing.
     	@param server_id, a identity of the server.
-    	@param item_id, which is the item user would like to buy. It is from the result of getProductList.
-    	@param onsales_id, which is the identity of our system for the item. It is from the result of getProductList.
+    	@param item_id, which is the item user would like to buy. 
+    			It is from the result of getProductList.
+    	@param onsales_id, which is the identity of our system for the item. 
+    			   It is from the result of getProductList.
     	@param provider_id, which means the user logins via which provider, like Facebook or something else.
-    		It is from the result of login.
+    			    It is from the result of login.
     	@param character_profile, give the character profile of the game in query string format.
     	@param token, which is the token for the provider. It is from the result of login.
     	@param callback, APICallback has 2 returns, one is result code, the other is result json string.
@@ -64,9 +73,9 @@ Please read header file, [IGbombClient.h](https://github.com/Asgard-Entertainmen
 ```
 The result json string in APICallback is all in the same format, please read the [block of callback](https://github.com/Asgard-Entertainment/GbombSDK-Mobile/blob/master/README.md#callback)
 ##Android
-Using the library is really simple, just look at the source code of the GbombSDKSample.
 ###Setup
-add the following lines into AndroidManifest.xml
+1. Make the reference to our libraries in eclipse.
+2. Add the following lines into AndroidManifest.xml
 ```xml
   <activity
     android:screenOrientation="landscape"
@@ -107,9 +116,9 @@ and add the following lines into your AppDelegate
 	client->init("YOUR_GAME_ID");
 ```
 ##iOS
-Using the library is really simple, just drag the frameworks into your project.
 ###Setup
-add the following lines into Info.plist
+1. Drag the frameworks into your project.
+2. Add the following lines into Info.plist
 ``` plist
 	<key>FacebookAppID</key>
 	<string>855391541148444</string>
