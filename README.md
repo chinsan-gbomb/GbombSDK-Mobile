@@ -1,6 +1,67 @@
 #GbombSDK-Mobile
 ##Interface
 Please read header file, [IGbombClient.h](https://github.com/Asgard-Entertainment/GbombSDK-Mobile/blob/master/Android/GbombSDKWrapper/jni/include/IGbombClient.h)
+``` C++
+    /**
+    	Initialize SDK, should call this before any function.
+    	@param gameId, which is a id which we gave you.
+    */
+    void init(const string gameId);
+    
+    /**
+    	Start a dailog and process the flow of login.
+    	@param callback, APICallback has 2 returns, one is result code, the other is result json string.
+    */
+    void login(const APICallback callback);
+
+    /**
+    	Open a web dialog let user report the issues.
+    	@param character_profile, give the character profile of the game in query string format.
+        @param callback, APICallback has 2 returns, one is result code, the other is result json string.
+    */
+    void callService(const string character_profile, const APICallback callback);
+    
+    /**
+    	Get Product List via our server and store service.
+    	@param character_profile, give the character profile of the game in query string format.
+    	@param callback, APICallback has 2 returns, one is result code, the other is result json string.
+    */
+    void getProductList(const string character_profile, const APICallback callback);
+    
+    /**
+    	Start a flow of purchasing.
+    	@param server_id, a identity of the server.
+    	@param item_id, which is the item user would like to buy. It is from the result of getProductList.
+    	@param onsales_id, which is the identity of our system for the item. It is from the result of getProductList.
+    	@param provider_id, which means the user logins via which provider, like Facebook or something else.
+    		It is from the result of login.
+    	@param character_profile, give the character profile of the game in query string format.
+    	@param token, which is the token for the provider. It is from the result of login.
+    	@param callback, APICallback has 2 returns, one is result code, the other is result json string.
+    */
+    void purchase(const string cid,
+                          const string server_id, 
+                          const string item_id,
+                          const string onsales_id,
+                          const string provider_id,
+                          const string character_profile,
+                          const string token,
+                          const APICallback callback);
+
+    /**
+    	Subscribe a device.
+    	@param regid, which is a identify get from GCM or APN.
+    	@param callback, APICallback has 2 returns, one is result code, the other is result json string.
+    */
+    void subPush(const string regid, const APICallback callback);
+    
+    /**
+    	Unsubscribe a device.
+    	@param regid, which is a identify get from GCM or APN.
+    	@param callback, APICallback has 2 returns, one is result code, the other is result json string.
+    */
+    void unsubPush(const string regid, const APICallback callback);
+```
 ##Android
 Using the library is really simple, just look at the source code of the GbombSDKSample.
 ###Setup
