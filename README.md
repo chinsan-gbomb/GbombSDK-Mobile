@@ -117,8 +117,9 @@ and add the following lines into your AppDelegate
 ```
 ##iOS
 ###Setup
-1. Drag the frameworks into your project.
-2. Add the following lines into Info.plist
+1. Add StoreKit.framework into your project
+2. Drag our frameworks into your project.
+3. Add the following lines into Info.plist
 ``` plist
 	<key>FacebookAppID</key>
 	<string>855391541148444</string>
