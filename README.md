@@ -144,7 +144,12 @@ and add the following lines into your AppDelegate
 4. result data
 ``` json
 /* success data from login */
-{ "uid": "UNIQUE_ID", "token": "ACCESS_TOKEN" , "user_id":"ID_FROM_OAUTH_PROVIDER","expires":"EXPIRED_TIME","provider_id":"OAUTH_PROVIDER_NAME" }
+{ "uid": "UNIQUE_ID", 
+  "token": "ACCESS_TOKEN" , 
+  "user_id":"ID_FROM_OAUTH_PROVIDER",
+  "expires":"EXPIRED_TIME",
+  "provider_id":"OAUTH_PROVIDER_NAME" 
+}
 ```
 
 
