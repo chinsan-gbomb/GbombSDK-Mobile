@@ -141,5 +141,11 @@ and add the following lines into your AppDelegate
   "data": { }
 }
 ```
+4. result data
+``` json
+/* success data from login */
+{ "uid": "UNIQUE_ID", "token": "ACCESS_TOKEN" , "user_id":"ID_FROM_OAUTH_PROVIDER","expires":"EXPIRED_TIME","provider_id":"OAUTH_PROVIDER_NAME" }
+```
+
 
 More documentation is still to come. For now, please read [IGbombClient.h](https://github.com/Asgard-Entertainment/GbombSDK-Mobile/blob/master/Android/GbombSDKWrapper/jni/include/IGbombClient.h) and [GbombSDKSample](https://github.com/Asgard-Entertainment/GbombSDK-Mobile/tree/master/GbombSDKSample).
