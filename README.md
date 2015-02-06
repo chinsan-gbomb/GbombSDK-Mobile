@@ -3,50 +3,50 @@
 Our interface is in C++.
 Please read header file, [IGbombClient.h](https://github.com/Asgard-Entertainment/GbombSDK-Mobile/blob/master/Android/GbombSDKWrapper/jni/include/IGbombClient.h).
 
-Our Client is design in Singleton pattern. So you can easily get a instance using a code below.
+Our Client is designed in Singleton pattern. So you can easily get an instance using a code below.
 ``` C++
 IGbombClient *client = GbombClient::getInstance();
 ```
-And there are its method below.
+And the method as below.
 ``` C++
     /**
     	Initialize SDK, should call this before any function.
-    	@param gameId, which is a id which we gave you.
+    	@param gameId, which is an id which we gave you.
     */
     void init(const string gameId);
     
     /**
-    	Start a dailog and process the flow of login.
-    	@param callback, APICallback has 2 returns, one is result code, the other is result json string.
+    	Start a dialog and process the flow of login.
+    	@param callback, APICallback has 2 returns, one is result code, and the other is result json string.
     */
     void login(const APICallback callback);
 
     /**
-    	Open a web dialog let user report the issues.
-    	@param character_profile, give the character profile of the game in query string format.
-        @param callback, APICallback has 2 returns, one is result code, the other is result json string.
+    	Open a web dialog and let user report the issues.
+    	@param character_profile, make the character profile of the game in query string format.
+        @param callback, APICallback has 2 returns, one is result code, and the other is result json string.
     */
     void callService(const string character_profile, const APICallback callback);
     
     /**
     	Get Product List via our server and store service.
-    	@param character_profile, give the character profile of the game in query string format.
-    	@param callback, APICallback has 2 returns, one is result code, the other is result json string.
+    	@param character_profile, make the character profile of the game in query string format.
+    	@param callback, APICallback has 2 returns, one is result code, and the other is result json string.
     */
     void getProductList(const string character_profile, const APICallback callback);
     
     /**
     	Start a flow of purchasing.
-    	@param server_id, a identity of the server.
+    	@param server_id, an identity of the server.
     	@param item_id, which is the item user would like to buy. 
     			It is from the result of getProductList.
     	@param onsales_id, which is the identity of our system for the item. 
     			   It is from the result of getProductList.
-    	@param provider_id, which means the user logins via which provider, like Facebook or something else.
+    	@param provider_id, which means the user logins via which oauth provider, like Facebook or something else.
     			    It is from the result of login.
-    	@param character_profile, give the character profile of the game in query string format.
+    	@param character_profile, make the character profile of the game in query string format.
     	@param token, which is the token for the provider. It is from the result of login.
-    	@param callback, APICallback has 2 returns, one is result code, the other is result json string.
+    	@param callback, APICallback has 2 returns, one is result code, and the other is result json string.
     */
     void purchase(const string cid,
                           const string server_id, 
@@ -59,22 +59,22 @@ And there are its method below.
 
     /**
     	Subscribe a device.
-    	@param regid, which is a identify get from GCM or APN.
-    	@param callback, APICallback has 2 returns, one is result code, the other is result json string.
+    	@param regid, which is an identify get from GCM or APN.
+    	@param callback, APICallback has 2 returns, one is result code, and the other is result json string.
     */
     void subPush(const string regid, const APICallback callback);
     
     /**
     	Unsubscribe a device.
-    	@param regid, which is a identify get from GCM or APN.
+    	@param regid, which is an identify get from GCM or APN.
     	@param callback, APICallback has 2 returns, one is result code, the other is result json string.
     */
     void unsubPush(const string regid, const APICallback callback);
 ```
-The result json string in APICallback is all in the same format, please read the [block of callback](https://github.com/Asgard-Entertainment/GbombSDK-Mobile/blob/master/README.md#callback)
+The result json string in APICallback are all in the same format, please read the [block of callback](https://github.com/Asgard-Entertainment/GbombSDK-Mobile/blob/master/README.md#callback)
 ##Android
 ###Setup
-1. Make the reference to our libraries in eclipse.
+1. Make reference to our libraries in eclipse.
 2. Add the following lines into AndroidManifest.xml
 ```xml
   <activity
@@ -132,7 +132,7 @@ and add the following lines into your AppDelegate
 	client->init("YOUR_GAME_ID");
 ```
 ##Callback
-1. code: 100 is okay, others is failed
+1. code: 100 is okay, others failed
 2. data: The format is using [JSend](http://labs.omniti.com/labs/jsend)
 3. sample:
 ``` json
