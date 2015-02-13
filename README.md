@@ -144,12 +144,26 @@ and add the following lines into your AppDelegate
 4. result data
 ``` json
 /* success data from login */
-{ "uid": "UNIQUE_ID", 
+{ 
+  "uid": "UNIQUE_ID", 
   "token": "ACCESS_TOKEN" , 
   "user_id":"ID_FROM_OAUTH_PROVIDER",
   "expires":"EXPIRED_TIME",
   "provider_id":"OAUTH_PROVIDER_NAME" 
 }
+
+/* success data from getProductList */
+[
+  {
+    "currency_code": "NT", 
+    "description": "DESCRIPTION_OF_ITEM", 
+    "image_url": "", 
+    "item_id": "ITEM_ID", 
+    "onsale_id": "UNIQUE_ITEM_ID_IN_OUR_SERVER", 
+    "price": 30,	/* PRICE IN NUMBER */ 
+    "title": "TITLE_OF_ITEM"
+  }, { /*SAME AS ABOVE */ }
+]
 ```
 
 
