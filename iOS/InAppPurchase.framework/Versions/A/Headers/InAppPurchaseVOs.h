@@ -75,6 +75,7 @@ struct IAPPurchaseVO
     std::string ItemId;
     std::string OrderDetails;
     std::string GameId;
+    std::string CharacterProfile;
 //    std::string ClientID;
     IAPPurchaseVO(){ Protocol=IAP_PURCHASE; }
 };

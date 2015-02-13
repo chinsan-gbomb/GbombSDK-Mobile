@@ -37,6 +37,7 @@
 - (void)gbClientDidNotComplete:(NSInteger) code result:(NSString *)json;
 - (void)gbClientDidFailWithError:(NSError *)error;
 
+
 @property (nonatomic, assign) id<GBClientDelegate> delegate;
 @property(readonly) FTSession *ftsession;
 @property(readonly) FBSession *fbsession;
@@ -47,7 +48,7 @@
 @property(readonly) NSMutableData *responseData;
 @property(readonly) NSURLResponse *response;
 @property(readonly) NSInteger statusCode;
-@property (readonly) NSString *gameId;
+@property(readonly) NSString *gameId;
 @end
 
 @protocol GBClientDelegate <NSObject>

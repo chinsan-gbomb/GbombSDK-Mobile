@@ -20,6 +20,6 @@ public:
     virtual ~StoreServiceIOS();
     virtual void productsRequest(IAPProductListResponseVO *vo);
     virtual void addPayment(IAPPurchaseVO *vo);
-    virtual void confirmPurchase(IAPPurchaseResponseVO *vo);
+    virtual void confirmPurchase(IAPPurchaseVO *vo);
 };
 #endif /* defined(__InAppPurchase__StoreServiceIOS__) */

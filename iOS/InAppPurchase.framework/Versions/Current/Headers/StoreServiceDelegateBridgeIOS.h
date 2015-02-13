@@ -19,7 +19,7 @@
 
 @property(nonatomic, copy) NSMutableDictionary* queuedTransaction;
 
-- (void) confirmPurchase: (IAPPurchaseResponseVO*) vo;
+- (void) confirmPurchase: (IAPPurchaseVO*) vo;
 @end
 
 #endif /* defined(__InAppPurchase__StoreServiceDelegateBridgeIOS__) */
