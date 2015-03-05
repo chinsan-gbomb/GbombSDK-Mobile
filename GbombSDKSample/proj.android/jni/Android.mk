@@ -5,7 +5,7 @@ include $(CLEAR_VARS)
 $(call import-add-path,$(LOCAL_PATH)/../../cocos2d)
 $(call import-add-path,$(LOCAL_PATH)/../../cocos2d/cocos)
 $(call import-add-path,$(LOCAL_PATH)/../../cocos2d/external)
-$(call import-add-path,$(LOCAL_PATH)/../../../GbombSDKWrapper)
+$(call import-add-path,$(LOCAL_PATH)/../../../Android/GbombSDKWrapper)
 #$(call import-add-path,$(LOCAL_PATH)/../../../android/jni)
 
 #NDK_MODULE_PATH := ../libs/$(TARGET_ARCH_ABI)/

@@ -1,8 +1,14 @@
 #define COCOS2D_DEBUG 1
 
 #include "HelloWorldScene.h"
-#include "GbombClient.h"
 
+
+#ifdef __ANDROID_API__
+#include "GbombClient.h"
+#endif
+#if ((defined __APPLE__) || (defined(TARGET_OS_IPHONE)) || defined(TARGET_IPHONE_SIMULATOR))
+#include <PlatformSDK/GbombClient.h>
+#endif
 USING_NS_CC;
 
 Scene* HelloWorld::createScene() {
