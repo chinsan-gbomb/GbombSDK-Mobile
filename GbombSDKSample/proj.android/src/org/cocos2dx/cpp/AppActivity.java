@@ -71,4 +71,8 @@ public class AppActivity extends Cocos2dxActivity {
 		GbombClient.onActivityResult(requestCode, resultCode, data);
 		super.onActivityResult(requestCode, resultCode, data);
 	}
+	protected void onLoadNativeLibraries() {
+		System.loadLibrary("gbombsdk");
+		System.loadLibrary("cocos2dcpp");
+	}
 }
